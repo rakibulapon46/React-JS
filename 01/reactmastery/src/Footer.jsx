@@ -2,7 +2,7 @@ function Footer(){
 
     return(
         <footer>
-            <p>Your website name Ghost</p>
+            <p>FOOTER Your website name Ghost</p>
         </footer>
     )
 }
