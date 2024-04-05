@@ -1,4 +1,8 @@
 function Food() {
+
+  const food1 = "Banana";
+  const food2 = "coconut";
+
   return (
     <div>
       <ul>
@@ -6,10 +10,10 @@ function Food() {
           <a href="#">Apple</a>
         </li>
         <li>
-          <a href="#">Banana</a>
+          <a href="#">{food1}</a>
         </li>
         <li>
-          <a href="#">Coconut</a>
+          <a href="#">{food2.toUpperCase()}</a>
         </li>
         <li>
           <a href="#">Kiwi</a>
