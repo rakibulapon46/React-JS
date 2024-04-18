@@ -22,13 +22,13 @@ class About extends Component {
     };
   }
 
-  ChangeValue(a){
+  ChangeValue(){
     this.setState({
       profession: "Freelance"
     })
   }
 
-  ChangeMind = this.ChangeValue.bind(this, this.a)
+  ChangeMind = this.ChangeValue.bind(this)
 
   render() {
     return (
