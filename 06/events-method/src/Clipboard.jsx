@@ -9,7 +9,10 @@ function Clipboard() {
     let myInput = document.getElementById('myInput');
     setTimeout(() => {
       alert(myInput.value)
-    }, 2000);
+    }, 1000);
+  }
+  const onPasteText2 = () => {
+    document.write('Text Pasted successfully')
   }
   return (
     <>
@@ -22,7 +25,9 @@ function Clipboard() {
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, est.
       </h2>
       <input type="text" onPaste={onPasteText} id="myInput" placeholder="Enter your text here"/>
-      
+      <br />
+      <br />
+      <input type="text" placeholder="2nd input" onPaste={onPasteText2}/>
     </>
   );
 }
