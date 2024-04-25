@@ -2,6 +2,7 @@
 import './App.css'
 import Clipboard from './Clipboard.jsx'
 import Focus from './Focus.jsx'
+import Keyboard from './Keyboard.jsx'
 
 function App() {
 
@@ -10,6 +11,8 @@ function App() {
       <Clipboard/>
       <hr />
       <Focus/>
+      <hr />
+      <Keyboard/>
     </>
   )
 }
