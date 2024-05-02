@@ -6,6 +6,7 @@ function App() {
   return (
     <>
     <Styles/>
+    <p>This is p tag</p>
     </>
   )
 }
