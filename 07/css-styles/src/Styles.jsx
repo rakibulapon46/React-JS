@@ -16,6 +16,7 @@ function Styles() {
       <h2 className="title">Hello world</h2>
       <hr />
       <h1 className= {StyleModule.title}> Css Module</h1>      
+      <h1 className= {StyleModule.sub_title}> Css Module</h1>      
     </div>
   );
 }

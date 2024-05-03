@@ -6,3 +6,9 @@
     padding: 10px;
     margin: 0;
 }
+.sub_title{
+    text-align: right;
+    font-size: 30px;
+    color: rgb(249, 71, 0);
+    background-color: rgb(124, 216, 113);
+}
