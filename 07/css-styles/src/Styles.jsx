@@ -1,4 +1,5 @@
 import './Style.css'
+import StyleModule from './Style.module.css'
 
 function Styles() {
   const ElementOne = {
@@ -13,6 +14,8 @@ function Styles() {
       <h1 style={ElementOne}>Inline css</h1>
       <p>This 2nd p</p>
       <h2 className="title">Hello world</h2>
+      <hr />
+      <h1 className= {StyleModule.title}> Css Module</h1>      
     </div>
   );
 }
