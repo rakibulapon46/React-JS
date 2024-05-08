@@ -18,6 +18,11 @@ function Input() {
     <input type="date" name="CreationDate" className="form-control" onChange={formChange}/>
     <br />
     <textarea name="About" placeholder="Tell me about yourself" className="form-control" onChange={formChange}></textarea>
+    <br />
+    <input type="radio" name="gender" value="male" onChange={formChange}/>
+    <label htmlFor="gender">male</label>
+    <input type="radio" name="gender" value="female" onChange={formChange}/>
+    <label htmlFor="gender">female</label>
     </div>
   )
 }
