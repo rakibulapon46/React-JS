@@ -16,6 +16,8 @@ function Input() {
     </select>
     <br />
     <input type="date" name="CreationDate" className="form-control" onChange={formChange}/>
+    <br />
+    <textarea name="About" placeholder="Tell me about yourself" className="form-control" onChange={formChange}></textarea>
     </div>
   )
 }
