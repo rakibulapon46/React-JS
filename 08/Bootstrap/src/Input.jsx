@@ -1,7 +1,7 @@
 
 function Input() {
   const formChange = (event) => {
-    console.log(event.target.name)
+    console.log(event.target.value)
   }
   return (
     <div className="container">
@@ -14,6 +14,8 @@ function Input() {
       <option value="Entertainment">Entertainment</option>
       <option value="Development">Development</option>
     </select>
+    <br />
+    <input type="date" name="CreationDate" className="form-control" onChange={formChange}/>
     </div>
   )
 }
