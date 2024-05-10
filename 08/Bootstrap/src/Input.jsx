@@ -23,6 +23,8 @@ function Input() {
     <label htmlFor="gender">male</label>
     <input type="radio" name="gender" value="female" onChange={formChange}/>
     <label htmlFor="gender">female</label>
+
+   <input type="checkbox" name="lastName" />
     </div>
   )
 }
