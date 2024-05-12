@@ -3,6 +3,12 @@ function Input() {
   const formChange = (event) => {
     console.log(event.target.value)
   }
+
+  const checkBoxHandler = (event) => {
+    this.setState({
+      checkBox : event.target.checked
+    })
+  }
   return (
     <div className="container">
     <input type="text" name="firstName"placeholder="Enter your name here" className="form-control" onChange={formChange}/>
@@ -24,7 +30,7 @@ function Input() {
     <input type="radio" name="gender" value="female" onChange={formChange}/>
     <label htmlFor="gender">female</label>
 
-   <input type="checkbox" name="lastName" />
+   <input type="checkbox" name="checkbox" onChange={checkBoxHandler} />
     </div>
   )
 }
