@@ -1,6 +1,7 @@
 import './App.css'
-import Bootstrap from './Bootstrap'
-import Input from './Input'
+import Bootstrap from './Bootstrap.jsx'
+import ControlledComponent from './ControlledComponent.jsx'
+import Input from './Input.jsx'
 
 function App() {
   return (
@@ -8,6 +9,8 @@ function App() {
     <Bootstrap/>
     <hr />
     <Input/>
+    <hr />
+    <ControlledComponent/>
     </>
   )
 }
