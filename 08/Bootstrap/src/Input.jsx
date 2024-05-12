@@ -1,38 +1,93 @@
+import { Component } from "react";
 
-function Input() {
-  const formChange = (event) => {
-    console.log(event.target.value)
+export default class Input extends Component {
+
+  state = {
+    firstName:"",
+    lastName:"",
+    category:"",
+    CreationDate:"",
+    About:"",
+    gender:"",
+    checkbox:true
   }
 
-  const checkBoxHandler = (event) => {
+  formChange = (event) => {
     this.setState({
-      checkBox : event.target.checked
+      [event.target.name]: event.target.value
     })
+  };
+
+  checkBoxHandler = (event) => {
+    this.setState({
+      checkbox: event.target.checked,
+    });
+  };
+  render() {
+    const {firstName, lastName, category, CreationDate, About, checkbox } = this.state
+    return (
+      <div className="container">
+        <input
+          type="text"
+          name="firstName"
+          placeholder="Enter your first name here"
+          className="form-control"
+          onChange={this.formChange}
+          value={firstName}
+        />
+        <br />
+        <input
+          type="text"
+          name="lastName"
+          placeholder="Enter your last name here"
+          className="form-control"
+          onChange={this.formChange}
+          value={lastName}
+        />
+        <br />
+        <select name="category" onChange={this.formChange} className="form-control" value={category}>
+          <option value="Select">Select</option>
+          <option value="Programming">Programming</option>
+          <option value="Education">Education</option>
+          <option value="Entertainment">Entertainment</option>
+          <option value="Development">Development</option>
+        </select>
+        <br />
+        <input
+          type="date"
+          name="CreationDate"
+          className="form-control"
+          onChange={this.formChange}
+          value={CreationDate}
+        />
+        <br />
+        <textarea
+          name="About"
+          placeholder="Tell me about yourself"
+          className="form-control"
+          onChange={this.formChange}
+          value={About}
+        ></textarea>
+        <br />
+        <input type="radio" name="gender" value="male" onChange={this.formChange} />
+        <label htmlFor="gender">male</label>
+        <input
+          type="radio"
+          name="gender"
+          value="female"
+          onChange={this.formChange}
+        />
+        <label htmlFor="gender">female</label>
+        <br />
+
+        <input type="checkbox" name="checkbox" onChange={this.checkBoxHandler} checked={checkbox} />
+        <label htmlFor="checkbox">I agree to the terms and conditions</label>
+        <br />
+        <button type="submit" className="btn btn-primary" onClick={() => console.log(this.state) }>
+          Submit
+        </button>
+
+      </div>
+    );
   }
-  return (
-    <div className="container">
-    <input type="text" name="firstName"placeholder="Enter your name here" className="form-control" onChange={formChange}/>
-<br />
-    <select name="category" onChange={formChange} className="form-control">
-      <option value="Select">Select</option>
-      <option value="Programming">Programming</option>
-      <option value="Education">Education</option>
-      <option value="Entertainment">Entertainment</option>
-      <option value="Development">Development</option>
-    </select>
-    <br />
-    <input type="date" name="CreationDate" className="form-control" onChange={formChange}/>
-    <br />
-    <textarea name="About" placeholder="Tell me about yourself" className="form-control" onChange={formChange}></textarea>
-    <br />
-    <input type="radio" name="gender" value="male" onChange={formChange}/>
-    <label htmlFor="gender">male</label>
-    <input type="radio" name="gender" value="female" onChange={formChange}/>
-    <label htmlFor="gender">female</label>
-
-   <input type="checkbox" name="checkbox" onChange={checkBoxHandler} />
-    </div>
-  )
 }
-
-export default Input
