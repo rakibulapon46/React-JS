@@ -1,0 +1,41 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-item{
+    background-color: #f8f9fa;
+}
+
+.short_title{
+    font-size: 15px;
+    color: #5d5d5d;
+    width: 90%;
+}
+
+.long_title{
+    font-size: 20px;
+    color: black;
+}
+
+.channelName{
+    font-size: 15px;
+    color: #5d5d5d;
+    font-weight: 500;
+    margin-bottom: -2px;
+}
+
+.carousel-control-prev-icon{
+    background-image: url(arrow-left-square-fill.svg) !important;
+    left: -65%;
+    position: relative;
+}
+.carousel-control-next-icon{
+    background-image: url(arrow-right-square-fill.svg) !important;
+    right: -65%;
+    position: relative;
+}
+
+img{
+    aspect-ratio: 16/9;
+}
