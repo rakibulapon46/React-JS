@@ -1,12 +1,14 @@
 
 import './App.css'
-import Navbar from './Navbar.jsx'
+import Carousel from './assets/BlogWebsite/Carousel'
+import Navbar from './assets/BlogWebsite/Navbar'
 
 function App() {
 
   return (
     <>
      <Navbar/>
+     <Carousel/>
     </>
   )
 }
