@@ -115,6 +115,7 @@ export default class Carousel extends Component {
             ></span>
             <span className="visually-hidden">Next</span>
           </button>
+        <h3 className="my-5 recent_text">Recent Post</h3>
         </div>
       </div>
     );
