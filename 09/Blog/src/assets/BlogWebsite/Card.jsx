@@ -10,7 +10,7 @@ function Card(props) {
     <p className="card-text">{props.text}</p>
     <a href={props.href} className="btn btn-primary">{props.BtnText}</a>
   </div>
-</div>
+</div> 
     </div>
   )
 }
