@@ -39,3 +39,20 @@
 img{
     aspect-ratio: 16/9;
 }
+
+.recent_text{
+    font-size: 32px;
+}
+
+@media (min-width:250px) and (max-width:650px){
+    .carousel-control-prev-icon{
+        background-image: url(arrow-left-square-fill.svg) !important;
+        left: -5%;
+        position: relative;
+    }
+    .carousel-control-next-icon{
+        background-image: url(arrow-right-square-fill.svg) !important;
+        right: -5%;
+        position: relative;
+    }
+}
