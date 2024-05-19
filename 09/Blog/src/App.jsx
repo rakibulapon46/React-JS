@@ -8,7 +8,7 @@ function App() {
     <>
       <Navbar />
       <Carousel />
-      <div className="container">
+      <div className="container p-0">
         <div className="row">
           <div className="col-lg-4 col-md-6">
             <Card
