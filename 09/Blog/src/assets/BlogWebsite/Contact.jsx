@@ -1,6 +1,10 @@
+import Navbar from "./Navbar"
+
 function Contact() {
   return (
-    <div> This is Contact page</div>
+    <div>
+        <Navbar/>
+         This is Contact page</div>
   )
 }
 
