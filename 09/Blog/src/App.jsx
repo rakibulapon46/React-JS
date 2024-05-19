@@ -6,6 +6,7 @@ import About from "./assets/BlogWebsite/About";
 import Blog from "./assets/BlogWebsite/Blog";
 import Sponsor from "./assets/BlogWebsite/Sponsor";
 import Contact from "./assets/BlogWebsite/Contact";
+import Error from "./assets/BlogWebsite/Error";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/blog" element={<Blog/>} ></Route>
           <Route path="/sponsor" element={<Sponsor/>} ></Route>
           <Route path="/contact" element={<Contact/>} ></Route>
+          <Route path="*" element={<Error/>} ></Route>
         </Routes>
       </BrowserRouter>
     </>
