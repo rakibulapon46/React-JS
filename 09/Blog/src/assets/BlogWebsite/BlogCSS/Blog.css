@@ -44,6 +44,10 @@ img{
     font-size: 32px;
 }
 
+.active{
+    color: rgb(5, 122, 255) !important;
+}
+
 @media (min-width:250px) and (max-width:650px){
     .carousel-control-prev-icon{
         background-image: url(arrow-left-square-fill.svg) !important;
