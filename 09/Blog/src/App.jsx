@@ -1,98 +1,24 @@
 import "./App.css";
-import Card from "./assets/BlogWebsite/Card";
-import Carousel from "./assets/BlogWebsite/Carousel";
-import Navbar from "./assets/BlogWebsite/Navbar";
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./assets/BlogWebsite/Home";
+import About from "./assets/BlogWebsite/About";
+import Blog from "./assets/BlogWebsite/Blog";
+import Sponsor from "./assets/BlogWebsite/Sponsor";
+import Contact from "./assets/BlogWebsite/Contact";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Carousel />
-      <div className="container p-0">
-        <div className="row">
-          <div className="col-lg-4 col-md-6">
-            <Card
-              img="img/1.jpg"
-              title="Card Title 1"
-              text="A tranquil mountain lake mirrors the surrounding peaks and woods, with red canoes docked at the shore, creating a picturesque and peaceful outdoor setting."
-              href="#"
-              BtnText="Go Anywhere"
-            />
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <Card
-              img="img/2.jpg"
-              title="Card Title 2"
-              text="A serene landscape where sunlight bathes snow-capped mountains, casting cool shadows in the valley, with a vibrant blue lake reflecting the tranquil beauty of nature."
-              href="#"
-              BtnText="Go Somewhere"
-            />
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <Card
-              img="img/3.jpg"
-              title="Card Title 3"
-              text="The image captures a serene seascape at dusk, under a gradient sky with a soft-hued sunset, evoking a sense of calmness and the beauty of nature."
-              href="#"
-              BtnText="Go Nowhere"
-            />
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <Card
-              img="img/1.jpg"
-              title="Card Title 1"
-              text="A tranquil mountain lake mirrors the surrounding peaks and woods, with red canoes docked at the shore, creating a picturesque and peaceful outdoor setting."
-              href="#"
-              BtnText="Go Anywhere"
-            />
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <Card
-              img="img/2.jpg"
-              title="Card Title 2"
-              text="A serene landscape where sunlight bathes snow-capped mountains, casting cool shadows in the valley, with a vibrant blue lake reflecting the tranquil beauty of nature."
-              href="#"
-              BtnText="Go Somewhere"
-            />
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <Card
-              img="img/3.jpg"
-              title="Card Title 3"
-              text="The image captures a serene seascape at dusk, under a gradient sky with a soft-hued sunset, evoking a sense of calmness and the beauty of nature."
-              href="#"
-              BtnText="Go Nowhere"
-            />
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <Card
-              img="img/1.jpg"
-              title="Card Title 1"
-              text="A tranquil mountain lake mirrors the surrounding peaks and woods, with red canoes docked at the shore, creating a picturesque and peaceful outdoor setting."
-              href="#"
-              BtnText="Go Anywhere"
-            />
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <Card
-              img="img/2.jpg"
-              title="Card Title 2"
-              text="A serene landscape where sunlight bathes snow-capped mountains, casting cool shadows in the valley, with a vibrant blue lake reflecting the tranquil beauty of nature."
-              href="#"
-              BtnText="Go Somewhere"
-            />
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <Card
-              img="img/3.jpg"
-              title="Card Title 3"
-              text="The image captures a serene seascape at dusk, under a gradient sky with a soft-hued sunset, evoking a sense of calmness and the beauty of nature."
-              href="#"
-              BtnText="Go Nowhere"
-            />
-          </div>
-        </div>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home/>} ></Route>
+          <Route path="/about" element={<About/>} ></Route>
+          <Route path="/blog" element={<Blog/>} ></Route>
+          <Route path="/sponsor" element={<Sponsor/>} ></Route>
+          <Route path="/contact" element={<Contact/>} ></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
