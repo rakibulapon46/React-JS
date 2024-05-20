@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 } */
+
+.send{
+  background-color: rgb(190, 190, 190);
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 5%;
+  margin-top: 10px;
+  cursor: pointer;
+}

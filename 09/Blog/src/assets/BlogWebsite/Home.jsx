@@ -1,5 +1,6 @@
 import Card from "./Card";
 import Carousel from "./Carousel";
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Page from "./Page";
 
@@ -95,6 +96,7 @@ function Home() {
           </div>
         </div>
         <Page/>
+        <Footer/>
       </>
   );
 }
