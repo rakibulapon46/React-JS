@@ -1,6 +1,7 @@
 import Card from "./Card";
 import Carousel from "./Carousel";
 import Navbar from "./Navbar";
+import Page from "./Page";
 
 function Home() {
   return (
@@ -93,6 +94,7 @@ function Home() {
             </div>
           </div>
         </div>
+        <Page/>
       </>
   );
 }
