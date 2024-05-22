@@ -3,6 +3,7 @@
 import Form from "./Form";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import MyChild from "./MyChild";
+import FAQ from "./FAQ";
 
 function App() {
   // const [Name, setName] = useState("World");
@@ -21,6 +22,8 @@ function App() {
       <Form/>
       <hr />
       <MyChild Title={parentData} onMethod={dataPass} />
+      <hr />
+      <FAQ/>
     </>
   );
 }
