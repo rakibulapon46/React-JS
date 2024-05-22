@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const App = () => {
+function App() {
   const [Name, setName] = useState("World")
   const changeName = () =>{
     setName("Apon")
