@@ -4,6 +4,7 @@ import Form from "./Form";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import MyChild from "./MyChild";
 import FAQ from "./FAQ";
+import UseEffect from "./UseEffect";
 
 function App() {
   // const [Name, setName] = useState("World");
@@ -24,6 +25,8 @@ function App() {
       <MyChild Title={parentData} onMethod={dataPass} />
       <hr />
       <FAQ/>
+      <hr />
+      <UseEffect/>
     </>
   );
 }
