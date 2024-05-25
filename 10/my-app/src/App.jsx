@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import MyChild from "./MyChild";
 import FAQ from "./FAQ";
 import UseEffect from "./UseEffect";
+import Fetch from "./Fetch";
 
 function App() {
   // const [Name, setName] = useState("World");
@@ -27,6 +28,8 @@ function App() {
       <FAQ/>
       <hr />
       <UseEffect/>
+      <hr />
+      <Fetch/>
     </>
   );
 }
