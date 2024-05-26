@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import MyChild from "./MyChild";
 import FAQ from "./FAQ";
 import UseEffect from "./UseEffect";
-import Fetch from "./Fetch";
+import FetchData from "./FetchData";
 
 function App() {
   // const [Name, setName] = useState("World");
@@ -29,7 +29,7 @@ function App() {
       <hr />
       <UseEffect/>
       <hr />
-      <Fetch/>
+      <FetchData/>
     </>
   );
 }
