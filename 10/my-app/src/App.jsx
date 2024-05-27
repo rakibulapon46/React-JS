@@ -6,6 +6,7 @@ import MyChild from "./MyChild";
 import FAQ from "./FAQ";
 import UseEffect from "./UseEffect";
 import FetchData from "./FetchData";
+import ShowImg from "./ShowImg";
 
 function App() {
   // const [Name, setName] = useState("World");
@@ -30,6 +31,8 @@ function App() {
       <UseEffect/>
       <hr />
       <FetchData/>
+      <hr />
+      <ShowImg/>
     </>
   );
 }
