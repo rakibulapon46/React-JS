@@ -8,7 +8,7 @@ function ShowImg() {
         .then((res) => res.json())
         .then((data) => setImg(data))
         }, 1000);
-    })
+    }, [])
   return (
     <div className="container">
         {showImg &&
