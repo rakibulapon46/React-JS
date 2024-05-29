@@ -1,10 +1,15 @@
+import { useState, useEffect } from "react";
 
-function UseCustomData() {
-  return (
-    <div>
-        
-    </div>
-  )
-}
+const UseCustomData = (url) => {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url)
+      .then((res) => res.json())
+      .then((doc) => setData(doc));
+  });
 
-export default UseCustomData
+
+  return [data];
+};
+
+export default UseCustomData;
