@@ -12,6 +12,6 @@ function GetData() {
       }
     </div>
   )
-}
+} 
 
 export default GetData
