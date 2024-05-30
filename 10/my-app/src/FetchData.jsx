@@ -14,7 +14,7 @@ function FetchData() {
         {saveData &&
             saveData.map((data) => 
                 {
-                    return <DataReturn name= {data.name}/>
+                    return <DataReturn name= {data.name} key={data.id}/>
                 }
             )
         }
