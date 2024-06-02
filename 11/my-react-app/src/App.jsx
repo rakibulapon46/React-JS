@@ -6,6 +6,7 @@ function App() {
   return (
     <>
      <Student name="Apon" age={18} isStudent={true}/>
+     <Student/>
     </>
   )
 }
