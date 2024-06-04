@@ -9,7 +9,7 @@ function App() {
      <Student name="Apon" age={18} isStudent={true}/>
      <Student/>
      <hr />
-     <UserGreeting isLoggedIn={true} username="BroCode" />
+     <UserGreeting isLoggedIn={true} username="Apon" />
     </>
   )
 }
