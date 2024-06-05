@@ -72,3 +72,21 @@ button:focus-visible {
   padding: 10px;
   margin: 10px;
 }
+
+.welcomeMessage{
+  font-size: 32px;
+  background-color: rgb(11, 225, 0);
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.loginPrompt{
+  font-size: 32px;
+  background-color: rgb(244, 2, 2);
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
