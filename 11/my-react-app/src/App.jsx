@@ -1,5 +1,7 @@
 import "./App.css";
+import Button from "./Button";
 import List from "./List";
+import ProfilePicture from "./ProfilePicture";
 import Student from "./Student";
 import UserGreeting from "./UserGreeting";
 
@@ -20,13 +22,16 @@ function App() {
   ];
   return (
     <>
-      <Student name="Apon" age={18} isStudent={true} />
+      {/* <Student name="Apon" age={18} isStudent={true} />
       <Student />
       <hr />
       <UserGreeting isLoggedIn={false} username="Apon" />
       <hr />
       {fruits.length > 0 && <List items={fruits} category="Fruits" />}
-      {vegetables.length > 0 && <List items={vegetables} category="Vegetables" />}
+      {vegetables.length > 0 && <List items={vegetables} category="Vegetables" />} */}
+      <hr />
+      <Button/>
+      <ProfilePicture/>
     </>
   );
 }
