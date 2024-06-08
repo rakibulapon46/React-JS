@@ -1,6 +1,8 @@
 import "./App.css";
 import Button from "./Button";
+import Counter from "./Counter";
 import List from "./List";
+import MyComponent from "./MyComponent";
 import ProfilePicture from "./ProfilePicture";
 import Student from "./Student";
 import UserGreeting from "./UserGreeting";
@@ -28,10 +30,14 @@ function App() {
       <UserGreeting isLoggedIn={false} username="Apon" />
       <hr />
       {fruits.length > 0 && <List items={fruits} category="Fruits" />}
-      {vegetables.length > 0 && <List items={vegetables} category="Vegetables" />} */}
+      {vegetables.length > 0 && <List items={vegetables} category="Vegetables" />}
       <hr />
       <Button/>
       <ProfilePicture/>
+      <hr /> 
+      <MyComponent/>
+      <hr /> */}
+      <Counter/>
     </>
   );
 }
