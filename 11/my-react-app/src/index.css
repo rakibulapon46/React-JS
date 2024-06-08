@@ -118,3 +118,34 @@ button:focus-visible {
 .apon{
   max-width: 400px;
 }
+
+.counter_container{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.counter_display{
+  font-size: 7rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.counter_button{
+  width: 150px;
+  height: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: hsl(196, 100%, 57%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.counter_button:hover{
+  background-color: hsl(196, 79%, 50%);
+}
+
+.counter_button + .counter_button{
+  margin-left: 10px;
+}
