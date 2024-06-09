@@ -3,6 +3,7 @@ import Button from "./Button";
 import Counter from "./Counter";
 import List from "./List";
 import MyComponent from "./MyComponent";
+import OnChange from "./OnChange";
 import ProfilePicture from "./ProfilePicture";
 import Student from "./Student";
 import UserGreeting from "./UserGreeting";
@@ -36,8 +37,10 @@ function App() {
       <ProfilePicture/>
       <hr /> 
       <MyComponent/>
-      <hr /> */}
+      <hr /> 
       <Counter/>
+      <hr /> */}
+      <OnChange/>
     </>
   );
 }
