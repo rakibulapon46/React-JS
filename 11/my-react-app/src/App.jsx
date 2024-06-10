@@ -7,6 +7,7 @@ import OnChange from "./OnChange";
 import ProfilePicture from "./ProfilePicture";
 import Student from "./Student";
 import UserGreeting from "./UserGreeting";
+import ColorChanger from './ColorChanger';
 
 function App() {
   const fruits = [
@@ -23,9 +24,9 @@ function App() {
     { id: 4, name: "carrot", calories: 33 },
     { id: 5, name: "beans", calories: 105 },
   ];
-  return (
+  return(
     <>
-      {/* <Student name="Apon" age={18} isStudent={true} />
+       {/* <Student name="Apon" age={18} isStudent={true} />
       <Student />
       <hr />
       <UserGreeting isLoggedIn={false} username="Apon" />
@@ -37,12 +38,13 @@ function App() {
       <ProfilePicture/>
       <hr /> 
       <MyComponent/>
-      <hr /> 
+      <hr />  */}
       <Counter/>
-      <hr /> */}
+      <hr /> 
       <OnChange/>
+      <hr /> 
+      <ColorChanger/>
     </>
-  );
+  )
 }
-
-export default App;
+export default App
