@@ -9,6 +9,7 @@ import Student from "./Student";
 import UserGreeting from "./UserGreeting";
 import ColorChanger from './ColorChanger';
 import ObjectState from "./ObjectState";
+import ArrayState from "./ArrayState";
 
 function App() {
   const fruits = [
@@ -45,8 +46,10 @@ function App() {
       <OnChange/>
       <hr /> 
       <ColorChanger/>
-      <hr/> */}
+      <hr/> 
       <ObjectState/>
+      <hr /> */}
+      <ArrayState/>
     </>
   )
 }
