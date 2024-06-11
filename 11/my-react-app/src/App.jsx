@@ -8,6 +8,7 @@ import ProfilePicture from "./ProfilePicture";
 import Student from "./Student";
 import UserGreeting from "./UserGreeting";
 import ColorChanger from './ColorChanger';
+import ObjectState from "./ObjectState";
 
 function App() {
   const fruits = [
@@ -38,12 +39,14 @@ function App() {
       <ProfilePicture/>
       <hr /> 
       <MyComponent/>
-      <hr />  */}
+      <hr />  
       <Counter/>
       <hr /> 
       <OnChange/>
       <hr /> 
       <ColorChanger/>
+      <hr/> */}
+      <ObjectState/>
     </>
   )
 }
