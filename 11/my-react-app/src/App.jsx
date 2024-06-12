@@ -10,6 +10,7 @@ import UserGreeting from "./UserGreeting";
 import ColorChanger from './ColorChanger';
 import ObjectState from "./ObjectState";
 import ArrayState from "./ArrayState";
+import ArrayOfObject from "./ArrayOfObject";
 
 function App() {
   const fruits = [
@@ -48,8 +49,10 @@ function App() {
       <ColorChanger/>
       <hr/> 
       <ObjectState/>
-      <hr /> */}
-      <ArrayState/>
+      <hr /> 
+      <ArrayState/> 
+      <hr />  */}
+      <ArrayOfObject/>
     </>
   )
 }
