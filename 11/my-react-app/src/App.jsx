@@ -11,6 +11,7 @@ import ColorChanger from './ColorChanger';
 import ObjectState from "./ObjectState";
 import ArrayState from "./ArrayState";
 import ArrayOfObject from "./ArrayOfObject";
+import ToDoList from "./ToDoList";
 
 function App() {
   const fruits = [
@@ -51,8 +52,10 @@ function App() {
       <ObjectState/>
       <hr /> 
       <ArrayState/> 
-      <hr />  */}
+      <hr />
       <ArrayOfObject/>
+      <hr />  */}
+      <ToDoList/>
     </>
   )
 }
