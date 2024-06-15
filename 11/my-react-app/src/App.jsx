@@ -13,6 +13,7 @@ import ArrayState from "./ArrayState";
 import ArrayOfObject from "./ArrayOfObject";
 import ToDoList from "./ToDoList";
 import UseEffect from "./UseEffect";
+import WidthHeight from "./WidthHeight";
 
 function App() {
   const fruits = [
@@ -57,8 +58,10 @@ function App() {
       <ArrayOfObject/>
       <hr /> 
       <ToDoList/>
-      <hr /> */}
+      <hr />
       <UseEffect/>
+      <hr />  */}
+      <WidthHeight/>
     </>
   )
 }
