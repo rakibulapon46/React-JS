@@ -14,6 +14,7 @@ import ArrayOfObject from "./ArrayOfObject";
 import ToDoList from "./ToDoList";
 import UseEffect from "./UseEffect";
 import WidthHeight from "./WidthHeight";
+import DigitalClock from "./DigitalClock";
 
 function App() {
   const fruits = [
@@ -60,8 +61,10 @@ function App() {
       <ToDoList/>
       <hr />
       <UseEffect/>
-      <hr />  */}
+      <hr /> 
       <WidthHeight/>
+      <hr />  */}
+      <DigitalClock/>
     </>
   )
 }
