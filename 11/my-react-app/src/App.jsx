@@ -64,10 +64,10 @@ function App() {
       <UseEffect/>
       <hr /> 
       <WidthHeight/>
-      <hr />  */}
+      <hr />  
       <DigitalClock/>
-      {/* <hr />
-      <UseContext/> */}
+      <hr /> */}
+      <UseContext/>
     </>
   )
 }
