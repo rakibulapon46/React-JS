@@ -150,7 +150,8 @@ button:focus-visible {
   margin-left: 10px;
 } */
 
-*{
+/*
+ *{
   margin: 0;
   padding: 0;
 }
@@ -162,7 +163,6 @@ body{
   background-size: cover;
   background-attachment: fixed;
 
-  /* optional */
   display: flex;
   justify-content: center;
   min-height: 100vh;
@@ -184,3 +184,9 @@ body{
   text-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.75);
 }
 
+*/
+
+.box{
+  border: 3px solid;
+  padding: 25px;
+}
