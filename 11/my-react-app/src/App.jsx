@@ -17,6 +17,7 @@ import WidthHeight from "./WidthHeight";
 import DigitalClock from "./DigitalClock";
 import UseContext from "./UseContext";
 import MyRef from "./MyRef";
+import StopWatch from "./StopWatch";
 
 function App() {
   const fruits = [
@@ -69,8 +70,10 @@ function App() {
       <DigitalClock/>
       <hr /> 
       <UseContext/>
-      <hr /> */}
+      <hr />
       <MyRef/>
+      <hr />  */}
+      <StopWatch/>
     </>
   )
 }
